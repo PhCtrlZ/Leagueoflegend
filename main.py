@@ -74,7 +74,7 @@ class MainWindow:
         os.system("taskkill /F /im driver.exe")
         pass
     def reset(self):
-        self.uic.tt_edit.setText('Successfully!!!')
+        self.uic.tt_edit.setText('Waiting For Update!!!')
 
     def show(self):
         self.main_win.show()
