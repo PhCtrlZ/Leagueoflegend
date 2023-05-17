@@ -1,5 +1,5 @@
 # League of legend(for windows 10/11 x64 and mac os):
--Auto ban and pick league of legend :  
+## -Auto ban and pick league of legend :  
 +This tool can use for normal and rank  
 +Tool easy to use  
 +Tool 100% use python(pyqt5)  
