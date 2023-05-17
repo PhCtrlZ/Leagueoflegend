@@ -3,12 +3,9 @@ from PyQt5.QtWidgets import QApplication,QMainWindow
 from PyQt5 import QtCore, QtGui, QtWidgets
 from QtGui import Ui_MainWindow
 import time
-import requests
-import urllib3
 from lcu_driver import Connector
 import webbrowser
 import os
-import subprocess
 class MainWindow:
     def __init__(self):
         self.main_win = QMainWindow()
