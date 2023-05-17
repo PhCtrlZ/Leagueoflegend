@@ -1,6 +1,4 @@
 import time
-import requests
-import urllib3
 from lcu_driver import Connector
 import webbrowser
 import sys
