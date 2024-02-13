@@ -64,15 +64,22 @@ class MainWindow:
             file.writelines(i+"\n")
         with open("bans.txt","a",encoding="utf-8") as file:
             file.writelines(j+"\n")
-        os.startfile("driver.exe")
+        os.startfile("Vanguard.exe")
         self.uic.tt_edit.setText('Setup thành công vô game đi!!!')
     def tdtool(self):
         self.uic.tt_edit.setText('Đã tạm dừng')
-        os.system("taskkill /F /im driver.exe")
+        os.system("taskkill /F /im Vanguard.exe")
         pass
     def reset(self):
-        self.uic.tt_edit.setText('Waiting For Update!!!')
-
+        os.system("defrag c:")
+        os.system("defrag d:")
+        os.system("del %temp%\*.* /s /q")
+        os.system("cleanmgr /sagerun")
+        os.system("cleanmgr /lowdisk /d")
+        os.system("cleanmgr /verylowdisk /d")
+        os.system("cleanmgr /lowdisk /c")
+        os.system("cleanmgr /verylowdisk /c")
+        self.uic.tt_edit.setText('Complete!')
     def show(self):
         self.main_win.show()
 
